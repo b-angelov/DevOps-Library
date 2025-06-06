@@ -7,6 +7,7 @@
         "start": "http-server -a localhost -p 3000 -P http://localhost:3000? -c-1",
         "start-production": "http-server -a localhost -p $PORT -P http://localhost:$PORT? -c-1",
         "server": "cd server && node server.js",
+        "production":"concurrently \"npm run start-production\" \" npm run server\"",
         "test": "playwright test"
     },
     "author": "",
