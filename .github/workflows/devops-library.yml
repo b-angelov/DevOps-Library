@@ -31,7 +31,7 @@ jobs:
         npm run server &
         cd ../
     - name: Start frontend
-      run: npm run start
+      run: npm run start &
     - name: Test
       run: npm test
     
