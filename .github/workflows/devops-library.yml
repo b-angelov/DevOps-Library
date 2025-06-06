@@ -1,4 +1,4 @@
-name: DevOps Library project
+name: Devops Library project
 
 on:
   push:
