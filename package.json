@@ -5,6 +5,7 @@
     "main": "index.html",
     "scripts": {
         "start": "http-server -a localhost -p 3000 -P http://localhost:3000? -c-1",
+        "start-production": "http-server -a localhost -p $PORT -P http://localhost:$PORT? -c-1",
         "server": "cd server && node server.js",
         "test": "playwright test"
     },
