@@ -33,7 +33,7 @@ jobs:
     - name: Start frontend
       run: npm run start &
     - name: Test
-      run: npm test
+      run: npm run test
     
   deploy:
     runs-on: ubuntu-latest
