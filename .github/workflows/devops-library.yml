@@ -41,8 +41,6 @@ jobs:
     runs-on: ubuntu-latest
     needs: start-and-test
     steps:
-      - name: checkout repository
-        run: actions/checkout@v4
       - name: Deploy to production
         uses: johnbeynon/render-deploy-action@v0.0.8
         with:
