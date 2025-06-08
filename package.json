@@ -5,7 +5,7 @@
     "main": "index.html",
     "scripts": {
         "start": "http-server -a localhost -p 3000 -P http://localhost:3000? -c-1",
-        "start-production": "http-server -a 0.0.0.0 -p $PORT -P http://localhost:3030? -c-1",
+        "start-production": "http-server -a 0.0.0.0 -p $PORT -P $RENDER_URL/API? -c-1",
         "server": "cd server && PORT=3030 node server.js && cd ../",
         "production":"concurrently \" npm run server\" \"npm run start-production\"",
         "test": "playwright test"
