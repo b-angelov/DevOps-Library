@@ -2,8 +2,8 @@ import * as api from './api.js';
 
 const host = 'http://localhost:3030';
 //const host = process.env.RENDER_URL || 'http://localhost:3030';
-//api.settings.host = 'http://localhost:3030';
-api.settings.host = process.env.RENDER_URL ||'http://localhost:3030';
+api.settings.host = 'http://localhost:3030';
+//api.settings.host = process.env.RENDER_URL ||'http://localhost:3030';
 
 export const login = api.login;
 export const register = api.register;
